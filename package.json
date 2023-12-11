@@ -1,0 +1,23 @@
+{
+  "name": "hackerrank-problems",
+  "version": "1.0.0",
+  "description": "JavaScript/TypeScript solutions to various HackerRank (and other sources) problems related to data structures and algorithms.",
+  "scripts": {
+    "script": "nodemon --watch \"*.ts\" --exec \"ts-node\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathias-onu/hackerrank-problems.git"
+  },
+  "author": "Mathias Onu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathias-onu/hackerrank-problems/issues"
+  },
+  "homepage": "https://github.com/mathias-onu/hackerrank-problems#readme",
+  "dependencies": {
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
