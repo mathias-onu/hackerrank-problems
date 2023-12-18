@@ -142,5 +142,4 @@ class Letters {
 }
 
 const animal = new Letters('dog')
-animal.letters
 animal.singleWord()
