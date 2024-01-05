@@ -6,24 +6,28 @@
 */
 
 class Grades {
-    grades!: number[]
+    private _grades!: number[]
 
     constructor(grades: number[]) {
-        this.grades = grades
+        this._grades = grades
     }
 
-    add(grade: number) {
-        this.grades.push(grade)
+    public add(grade: number) {
+        this._grades.push(grade)
     }
 
-    average(): number {
+    public average(): number {
         let total: number = 0
 
-        for(let i = 0; i < this.grades.length; i++) {
-            total += this.grades[i]
+        for(let i = 0; i < this._grades.length; i++) {
+            total += this._grades[i]
         }
 
-        return total / this.grades.length
+        return total / this._grades.length
+    }
+
+    public get grades(): number[] {
+        return this._grades
     }
 }
 
