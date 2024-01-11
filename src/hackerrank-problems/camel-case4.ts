@@ -1,18 +1,3 @@
-/*
-    Problem:
-    Camel Case is a naming style common in many programming languages. In Java, 
-    method and variable names typically start with a lowercase letter, with all 
-    subsequent words starting with a capital letter (example: startThread). Names 
-    of classes follow the same pattern, except that they start with a capital 
-    letter (example: BlueCar).
-
-    Your task is to write a program that creates or splits Camel Case variable,
-    method, and class names.
-
-    Important note:
-    The following code is copy pasted from HackerRank and runs only in their
-    environment.
-*/
 'use strict';
 
 process.stdin.resume();
@@ -35,7 +20,6 @@ function readLine(): string {
 }
 
 function main() {
-    // Enter your code here
     // Read the input
     while (currentLine < inputLines.length) {
         // Replace carriage return with empty string
