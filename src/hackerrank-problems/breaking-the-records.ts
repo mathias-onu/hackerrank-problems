@@ -1,27 +1,13 @@
-/*
-    Problem:
-    Maria plays college basketball and wants to go pro. Each season she maintains 
-    a record of her play. She tabulates the number of times she breaks her season 
-    record for most points and least points in a game. Points scored in the first 
-    game establish her record for the season, and she begins counting from there.
-*/
-
 function breakingRecords(scores: number[]): number[] {
-    const records = [0, 0]
-    let maxRecord = scores[0]
-    let minRecord = scores[0]
-    
-    for(let i = 1; i < scores.length; i++) {  
-        if(scores[i] > maxRecord) {
-            records[0]++
-            maxRecord = scores[i]
-        } else if (scores[i] < minRecord) {
-            records[1]++
-            minRecord = scores[i]
-        }
-    }
-    
-    return records
-}
+    let [max, min] = [scores[0], scores[0]], [maxB, minB] = [0, 0];
+  
+    scores.forEach(score => {
+      if (score > max) [max, maxB] = [score, maxB + 1];
+      else if (score < min) [min, minB] = [score, minB + 1];
+    });
+  
+    return [maxB, minB];
+  }
+  
 
 console.log(breakingRecords([12, 24, 10, 24]))
