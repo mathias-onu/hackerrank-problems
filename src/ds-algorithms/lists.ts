@@ -1,11 +1,3 @@
-/*
-    Tasks:
-    1. Implement a List data structure 
-    2. Test the data structure by building a program that simulates a movie-rental 
-       store system (partial - built some functions)
-
-*/
-
 class List<Type> {
     private dataStore: Type[]
     private listSize: number
