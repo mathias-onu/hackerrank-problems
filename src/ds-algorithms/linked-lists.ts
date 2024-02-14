@@ -99,21 +99,10 @@ class LinkedList<T> {
             return out
         }
 
-        if (node.prev) {
-            node.prev.next = node.next
-        }
-
-        if (node.next) {
-            node.next.prev = node.prev
-        }
-
-        if (node === this.head) {
-            this.head = node.next
-        }
-
-        if (node === this.tail) {
-            this.tail = node.prev
-        }
+        if (node.prev) node.prev.next = node.next
+        else if (node.next) node.next.prev = node.prev
+        else if (node === this.head) this.head = node.next
+        else if (node === this.tail) this.tail = node.prev
 
         node.prev = node.next = undefined
         return node.value

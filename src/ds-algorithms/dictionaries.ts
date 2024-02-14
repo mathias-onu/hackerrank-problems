@@ -1,7 +1,7 @@
 // TODO: refactor by creating a type DNode, enforcing typing across dataStore instantiation, adding, and removing
 
 class Dictionary {
-    _dataStore!: any[]
+    private _dataStore!: any[]
 
     constructor() {
         this._dataStore = new Array()
