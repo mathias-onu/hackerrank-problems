@@ -1,8 +1,8 @@
 export class BankAccount {
     private _balance!: number
 
-    constructor(balance: number) {
-        this._balance = balance
+    open(initialDeposit: number): void {
+        this._balance = initialDeposit
     }
 
     deposit(amount: number): number {
