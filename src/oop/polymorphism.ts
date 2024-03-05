@@ -13,7 +13,3 @@ class PersonalCheckingAccount extends BankAccount {
         else super.open(initialDeposit)
     }
 }
-
-const personalAccount = new PersonalCheckingAccount()
-
-personalAccount.open(1000)
