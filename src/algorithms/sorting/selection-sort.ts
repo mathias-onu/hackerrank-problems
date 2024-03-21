@@ -18,4 +18,4 @@ const selectionSort = (arr: number[]): number[] => {
     return arr
 }
 
-console.log(selectionSort(generateArray()))
+console.log(selectionSort(generateArray(100)))
